@@ -44,7 +44,7 @@ class NotesAdapter(private var notes:List<Note>,context: Context):
         holder.deleteButton.setOnClickListener {
             db.deleteNote(note.id)
             refreshData(db.getAllNotes())
-            Toast.makeText(holder.itemView.context,"Note deleted",Toast.LENGTH_SHORT).show()
+            Toast.makeText(holder.itemView.context,"Task deleted",Toast.LENGTH_SHORT).show()
         }
     }
 

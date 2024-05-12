@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".AddNoteActivity">
+    tools:context=".AddNoteActivity"
+    android:background="#ffff">
 
     <TextView
         android:id="@+id/addNoteHeading"
@@ -16,8 +17,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins"
-        android:text="Add Note"
-        android:textColor="@color/orange"
+        android:text="Add Task"
+        android:textColor="#FA2C85"
         android:textSize="24sp" />
 
     <ImageView
@@ -27,13 +28,14 @@
         android:src="@drawable/baseline_task_alt_24"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/addNoteHeading"
-        android:layout_marginEnd="6dp"/>
+        android:layout_marginEnd="6dp" />
+
 
     <EditText
         android:id="@+id/titleEditText"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Enter the title"
+        android:hint="Enter the Date"
         android:padding="12dp"
         android:textSize="20sp"
         android:layout_below="@+id/addNoteHeading"
@@ -46,7 +48,7 @@
         android:id="@+id/contentEditText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="Enter the description"
+        android:hint="Enter the tasks you have to complete."
         android:gravity="top"
         android:padding="12dp"
         android:textSize="18sp"
